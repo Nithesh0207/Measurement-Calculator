@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meter to Centimeter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="big">
+    <div class="container">
+    <div class="card">
+    <h1>CONVERTER</h1>
+    <h2>Meter to Centimeter Converter</h2>
+    <input type="number" id="input" placeholder="Enter meters"><br>
+    <button onclick="mtocm()">Convert</button>
+    <p id="output1"></p>
+
+    <h2>CentiMeter to Meters converter</h2>
+    <input type="number" id="meter" placeholder="Enter Centimeters"><br>
+    <button onclick="cmtom()">Convert</button>
+    <p id="cm"></p>
+    </div>
+    </div>
+    </div>
+
+    <script>
+
+       function mtocm(){
+        const num1 = Number (document.getElementById("input").value);
+        const con1 = num1 * 100;
+        document.getElementById("output1").innerHTML = con1 + "CentiMeters";
+       }
+
+       function cmtom(){
+        const num2 = Number (document.getElementById("meter").value);
+        const con2 = num2 / 100;
+        document.getElementById("cm").innerHTML = con2 + "Meters";
+       }
+
+       
+
+    </script>
+
+</body>
+</html>
